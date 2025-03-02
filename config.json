@@ -1,13 +1,13 @@
 {
   "input": "./gallery",
   "output": "./build_output",
-  "title": "Photo Gallery",
+  "title": "Outer的鸟语花园",
   "sort-albums-by": "title",
   "sort-media-by": "filename",
   "download-photos": "copy",
   "cleanup": true,
   "theme": "cards",
   "css": "./custom.css",
-  "footer": "Copyright Text",
+  "footer": "copyright © OuterCyrex 2025",
   "usage-stats": false
 }
