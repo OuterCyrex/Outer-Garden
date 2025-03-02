@@ -6,17 +6,23 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif; /* 清晰易读的字体 */
   line-height: 1.6;
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #f5f5f5; /* 清新的背景色 */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 /* 容器样式 */
 #container {
+  flex: 1;
+  padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
 }
 
 /* 头部样式 */
@@ -27,7 +33,7 @@ header {
 
 header h1 {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: #2c3e50; /* 深蓝色标题 */
   margin-bottom: 10px;
 }
 
@@ -42,18 +48,19 @@ header h1 a:hover {
 
 /* 面包屑导航 */
 nav.breadcrumbs {
+  text-align: center;
   margin-bottom: 20px;
 }
 
 nav.breadcrumbs a {
   text-decoration: none;
-  color: #7f8c8d;
+  color: #7f8c8d; /* 灰色链接 */
   font-size: 0.9rem;
   margin-right: 10px;
 }
 
 nav.breadcrumbs a:hover {
-  color: #3498db;
+  color: #3498db; /* 鼠标悬停时的蓝色 */
 }
 
 /* 相册列表 */
@@ -76,7 +83,7 @@ nav.breadcrumbs a:hover {
 }
 
 #albums a:hover {
-  transform: scale(1.02);
+  transform: scale(1.02); /* 轻微放大效果 */
 }
 
 #albums a .info {
@@ -123,33 +130,11 @@ nav.breadcrumbs a:hover {
   display: block;
 }
 
-/* 分页 */
-.pagination {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.pagination a {
-  display: inline-block;
-  margin: 0 5px;
-  padding: 8px 12px;
-  background-color: #2c3e50;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.pagination a:hover {
-  background-color: #3498db;
-}
-
 /* 底部 */
 footer {
   text-align: center;
-  margin-top: 40px;
   padding: 20px 0;
-  background-color: #2c3e50;
+  background-color: #2c3e50; /* 深蓝色背景 */
   color: #fff;
 }
 
@@ -171,8 +156,4 @@ footer p {
   #albums a .info .date {
     font-size: 0.7rem;
   }
-
-  .pagination a {
-    padding: 6px 10px;
-  }
-}/* Your custom styles goes here */
+}
